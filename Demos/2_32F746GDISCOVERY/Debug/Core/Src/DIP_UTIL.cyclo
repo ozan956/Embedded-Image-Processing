@@ -1,0 +1,6 @@
+../Core/Src/DIP_UTIL.c:9:6:sobelUtilizedMirrorPadding	33
+../Core/Src/DIP_UTIL.c:118:6:DIP_UTIL_sobelFilter	7
+../Core/Src/DIP_UTIL.c:161:6:mirrorPadding	32
+../Core/Src/DIP_UTIL.c:302:6:DIP_UTIL_nonMaxSupression	19
+../Core/Src/DIP_UTIL.c:361:6:DIP_UTIL_doubleTreshold	7
+../Core/Src/DIP_UTIL.c:390:6:DIP_UTIL_hysteresis	13

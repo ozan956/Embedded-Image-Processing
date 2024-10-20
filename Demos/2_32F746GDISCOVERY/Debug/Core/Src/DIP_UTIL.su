@@ -1,0 +1,6 @@
+../Core/Src/DIP_UTIL.c:9:6:sobelUtilizedMirrorPadding	24	static
+../Core/Src/DIP_UTIL.c:118:6:DIP_UTIL_sobelFilter	160	static
+../Core/Src/DIP_UTIL.c:161:6:mirrorPadding	32	static
+../Core/Src/DIP_UTIL.c:302:6:DIP_UTIL_nonMaxSupression	72	static
+../Core/Src/DIP_UTIL.c:361:6:DIP_UTIL_doubleTreshold	56	static
+../Core/Src/DIP_UTIL.c:390:6:DIP_UTIL_hysteresis	40	static
