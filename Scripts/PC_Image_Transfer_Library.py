@@ -31,7 +31,7 @@ requestArray = {82: "IMAGE_READ", 87: "IMAGE_WRITE"}
 
 def init(serialPort):   
     global ser 
-    ser = serial.Serial(serialPort, 250000, timeout=None)
+    ser = serial.Serial(serialPort, 2000000, timeout=None)
     
     ser.flush()
     print(ser.name, "Opened")
@@ -175,6 +175,10 @@ def read_image():
         img565[:,:,0] = img565[:,:,1].copy()
         img565[:,:,1] = imgh.copy() 
         
+        #OD -> TODO edit this.
+        img565 = img565.reshape((height, width, 2)).astype(np.uint8)
+        img565 = img565[:, :, ::-1]  # Swap the two bytes in each pixel
+
         # convert BGR565 image to BGR fomrat
         im = cv2.cvtColor(img565,cv2.COLOR_BGR5652BGR)       
         
